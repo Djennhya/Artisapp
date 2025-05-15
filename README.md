@@ -135,3 +135,31 @@ Artisapp est une **application web** conçue pour permettre aux artisans de pré
 
 6. **Accéder à l’application :**
    Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+
+7. **Arborescence du projet Artisapp :**
+
+   Artisapp/
+├── backend/                    # Serveur Express.js
+│   ├── config/                 # Fichiers de config (base de données, etc.)
+│   │   └── db.js
+│   ├── controllers/            # Logique métier
+│   ├── models/                 # Modèles MySQL (ORM ou raw SQL)
+│   ├── routes/                 # Routes API Express
+│   ├── middleware/             # Auth, validation, gestion des erreurs
+│   ├── utils/                  # Fonctions utilitaires
+│   └── server.js              # Point d’entrée backend
+│
+├── frontend/                   # App Next.js
+│   ├── components/             # Composants réutilisables (UI, cartes, etc.)
+│   ├── pages/                  # Pages Next.js (accueil, produits, profil…)
+│   ├── styles/                 # Fichiers SCSS/CSS ou SCADUI
+│   ├── services/               # Appels API (axios/fetch)
+│   ├── context/                # Authentification, panier, etc.
+│   ├── utils/                  # Fonctions d’aide (formattage, etc.)
+│   ├── public/                 # Images statiques
+│   └── next.config.js
+│
+├── .env
+├── package.json
+└── README.md
+
